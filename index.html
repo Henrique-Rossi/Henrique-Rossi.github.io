@@ -27,7 +27,8 @@
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
   
-
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+ <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
 
   
   <link rel="stylesheet" href="style.css">
@@ -35,6 +36,7 @@
 
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script>
+
     jQuery(document).ready(function($) { 
         $(".scroll").click(function(event){        
             event.preventDefault();
@@ -64,7 +66,7 @@
   });
 
 
-
+  
     </script>
 </head>
 
@@ -107,10 +109,9 @@
               <div class="tooltip  ">
                 <span class="iconz blink-1">!</span>
                 <h1>Olá!</h1>
-                <p>Esse é um Site em<b style="color: #FB40F8;"> Desenvolvimento</b>,Melhorias e ajustes pendentes!</p>
-                <p>Responsivo:30%;<br>
-                  Animações:50%;</p>
-                <p></p>
+                <p>Esse é um Site foi<b style="color: #FB40F8;"> Descontinuado </b>,Favor acessar o meu novo Link,grato desde já =D!</p>
+                <p> https://meu-portfolio-henrique-rossi.netlify.app/</p>
+               
               </div>
             </a></li>
           
@@ -1179,8 +1180,22 @@ function topFunction() {
       animeScroll();
     }, 200));
   })();
+  Swal.fire(',, o mesmo portifolio se encontra agora no seguinte link,feito com deploy Netlify https://meu-portfolio-henrique-rossi.netlify.app/' )
+  Swal.fire({
+  title: '<strong>Olá,Muito Obrigado por Acessar o meu site </u></strong>',
+  icon: 'info',
+  html:
+    'o mesmo portifolio se encontra agora no seguinte link, ' +
+    '<a href="https://meu-portfolio-henrique-rossi.netlify.app/">links</a> ' +
+    'Feito agora em <strong>VUEJS</strong>',
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText:
+    '<strong>Continaur mesmo assim</strong',
+  confirmButtonAriaLabel: 'Thumbs up, great!',
 
-  
+})
   </script>
   
 </body>
