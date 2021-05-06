@@ -1,0 +1,474 @@
+@keyframes svglogoanimate{
+    0%{
+      stroke-dashoffset: 1000;
+  
+    }
+    70%{
+      stroke-dashoffset: 0;
+    }
+    100%{
+    stroke-dashoffset: 0;
+    
+    }
+  }
+  .svganimate svg:hover{
+    animation: svglogoanimate 3s ease-in-out forwards infinite;
+  
+  }
+ 
+  
+  .svganimate svg{
+    width: 8vw;
+    stroke-width: 2px;
+    stroke:#2feabb ;
+    fill: #11152b;
+   stroke-dashoffset: 1000;
+   stroke-dasharray: 1000;
+  
+  }  
+
+  .anime{
+    opacity: 0;
+    transform: translate3d(-50px,0,0);
+  }
+  .anime-start {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+   
+  }
+
+/* .card-main{
+  
+    transform: translate3d(-50px,0,0);
+  } */
+  
+  .anime-painel-cima{
+    opacity: 0;
+    transform: translate3d(0,-20%,0);
+  }
+  .anime-start-painel-cima {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+   
+  } 
+  .animacao-icons-exp{
+ 
+    animation: fadeInIcon 1s  ease-in-out both;
+  
+  
+  }
+  
+  /*Animação fotos*/
+  
+  #anime-icones div:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  
+  #anime-icones div:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  #anime-icones div:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+  
+  #anime-icones div:nth-child(4) {
+    animation-delay: 2s;
+  }
+  #anime-icones div:nth-child(5) {
+    animation-delay: 2.5s;
+    
+  }
+ 
+  
+  
+  @keyframes fadeInIcon {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -30%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .animacao-icons-sobe{
+ 
+    animation: fadeInIconSobe 1s  ease-in-out both;
+    opacity: 0;
+  
+  }
+
+  @keyframes fadeInIconSobe {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 20%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .anime-icones-sobe:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  
+ .anime-icones-sobe:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+   .anime-icones-sobe:nth-child(3) {
+    animation-delay: 1.3s;
+  }
+  
+  .anime-icones-sobe:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+
+ 
+
+
+  
+  .anime-svg-fundo{
+    opacity: 0;
+    transform: translate3d(100px,0,0);
+    
+  }
+  .anime-start-svg-fundo{
+    
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+  
+
+
+
+
+
+
+/*Animação painel foto*/
+  .animacao-foto-inicial{
+    animation: fadeFoto 2s ease-out both;
+  
+  }@keyframes fadeFoto {
+    from {
+      opacity: 0;
+      transform: translate3d(-20%, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+
+ /*animação card*/
+ .animacao-card-inicial{
+  animation: fadeLeft 0.8s ease-out both;
+  animation-delay: 2.3s;
+  
+}@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-18%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+/*Animação titulo inicial*/
+  .linha-icone{
+    opacity: 0;
+ 
+  }
+  .animacao-linha{
+ 
+    animation: fadeIn 1s  ease-in-out both;
+    animation-delay: 2.7s;
+  
+  }@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -40%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+ 
+
+  /*animação foto*/
+  .animacao-card-foto{
+    animation: fadeimg 1s ease-in both;
+    animation-delay: 3s;
+  
+  }@keyframes fadeimg{
+    from {
+      opacity: 0;
+      transform: translate3d(0, 0, 20%);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+  .anime-frase{
+    animation: fadeIn 1s ease-in both;
+    animation-delay: 3s;
+  }
+  .anime-frase2{
+    animation: fadeIn 1s ease-in both;
+    animation-delay: 3.3s;
+  }
+  .anime-frase3{
+    animation: fadeIn 1s ease-in both;
+    animation-delay: 3.5s;
+  }
+
+  .anime-button-inicial{
+    animation: fadebtn  1s ease-in both;
+    animation-delay: 3.8s;
+  }
+  @keyframes fadebtn{
+    from {
+      opacity: 0;
+      /* transform: translateY(20%) */
+    }
+    to {
+      opacity: 1;
+      /* transform: translateY(0) */
+    }
+  }
+
+  .animacao-icone-inicial{
+    animation: fadeicone 1s ease-in both;
+     animation-delay: 3s; 
+  }
+  .animacao-icone-inicial-1{
+    animation: fadeicone 1.5s ease-in both;
+     animation-delay: 3s; 
+  }.animacao-icone-inicial-2{
+    animation: fadeicone 2s ease-in both;
+     animation-delay: 3s; 
+  }
+  
+  @keyframes fadeicone {
+    from {
+      opacity: 0;
+      transform: translate3d(40%, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+ 
+  
+
+  .text {
+   
+    
+    color: #71fff3;
+  
+    
+    
+    position: relative;
+    
+    opacity: 0;
+    animation: fadeInText 0s 1.1s both;
+  }
+  .text-sub{
+    position: relative;
+    
+    opacity: 0;
+    animation: fadeInText 0s 1.1s both;
+  }
+
+  .text-block {
+    position: relative;
+    overflow: hidden;
+  
+  }
+
+  .text-block:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #71fff3;
+    transform: translateX(-100%);
+     animation: enlargeBlock 0.5s 0.6s both, revealBlock 0.5s 1.1s both; 
+  
+  }
+
+
+  
+  .text-block-sub {
+    position: relative;
+    overflow: hidden;
+  
+  }
+
+  .text-block-sub:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #a6bed0;
+    transform: translateX(-100%);
+     animation: enlargeBlock 0.5s 0.6s both, revealBlock2 0.5s 1.1s both; 
+  
+  }
+
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes enlargeBlock {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes revealBlock {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(80%);
+      opacity: 0;
+    }
+  }
+
+  @keyframes revealBlock2 {
+    from {
+      transform: translateX(10%);
+      
+    }
+    to {
+      transform: translateX(80%);
+      opacity: 0;
+    }
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*blur fraeses*/
+
+
+  .flip-box:hover .title
+  {
+    -webkit-animation: focus-in-contract 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: focus-in-contract 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  /***************************/
+  
+  @-webkit-keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+
+  /*animação back topo*/
+  .slide-top:hover {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+            animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+  }
+  @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+  
+  }
+  
+
+
+
+
+
+
+  /*maquina de escrever*/
+  /* DEMO-SPECIFIC STYLES */
+.typewriter  {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #2feabb; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 1s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 15% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #2feabb }
+}

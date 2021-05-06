@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11152b" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#11152b" />
+  <link rel="icon" type="imagem/png" href="img/alogo.webp" />
+  
+  <title>Document</title>
+   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+
+  <!-- FONTE -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+  <!-- ESCREVER AUTOMATICO -->
+  <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+
+  <!-- particles -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+  
+
+
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script>
+    jQuery(document).ready(function($) { 
+        $(".scroll").click(function(event){        
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600);
+
+            var largura = $(window).width();
+            if(largura <= 1000) {
+            $("nav ul#menu-mobile").toggle(); 
+            }
+       });
+    });
+
+
+    
+    //MENU
+    $(function() {
+      $("#menu-btn").click(function(e) {
+          $("nav ul#menu-mobile").toggle(); 
+      });
+      
+      $(window).resize(function(e) {
+          var largura = $(window).width();
+          if(largura >= 701) {
+             $("nav ul#menu-mobile").hide(); 
+          } 
+      });
+  });
+
+
+
+    </script>
+</head>
+
+<body class="esconder" >
+
+       <div id="loader" class="loader">
+         
+       
+     <svg viewBox="0 -4.758 1223.99 456.516" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>.cls-1{fill:#2feabb;stroke:#2feabb;stroke-miterlimit:10;}</style>
+  </defs>
+  <path style="stroke: rgb(47, 234, 187); fill: rgb(47, 234, 187);" d="M 1.951 446.541 L 119.977 446.541 L 273.19 259.605 L 327.438 274.999 L 314.976 209.755 L 490.915 2.293 L 370.69 0.826 L 1.951 446.541 Z"/>
+  <path style="stroke: rgb(47, 234, 187); fill: rgb(47, 234, 187);" d="M 292.392 447.003 L 425.288 288.55 L 403.382 200.195 L 472.02 233.054 L 665.522 1.581 L 781.623 1.581 L 407.033 448.463 L 292.392 447.003 Z"/>
+  <path style="stroke: rgb(47, 234, 187); fill: rgb(47, 234, 187);" d="M 449.842 448.464 L 826.83 -0.609 L 944.915 1.582 L 566.459 449.194 L 449.842 448.464 Z"/>
+  <path style="stroke: rgb(47, 234, 187); fill: rgb(47, 234, 187);" d="M 969.764 3.121 L 986.723 118.273 L 1116.503 202.62 L 920.357 264.963 L 1021.379 332.442 L 1219 270.098 L 1219.738 162.28 L 969.764 3.121 Z"/>
+  <path style="stroke: rgb(47, 234, 187); fill: rgb(47, 234, 187);" d="M 747.031 309.148 L 873.593 298.773 L 1013.553 448.464 L 877.315 448.464 L 747.031 309.148 Z"/>
+</svg>
+    </div>  
+
+
+     <div id="particles-container"> </div> 
+
+
+    <div style="display:none;" id="tudo_page"></div>
+
+
+    <header>
+      <nav class="menu">
+       <a  href="#home"> <img src="svg/logo.svg" alt=""> </a>
+
+  
+        <ul id="menu-desktop">
+          <li><a class="scroll" href="#home">HOME</a> </li>
+          <li><a class="scroll" href="#sobre">SOBRE</a></li>
+          <li><a class="scroll" href="#portifolio">PORTIFOLIO</a></li>
+          <li><a class="scroll" href="#Contato">CONTATO</a></li>
+    
+          <li><a>
+              <div class="tooltip  ">
+                <span class="iconz blink-1">!</span>
+                <h1>Olá!</h1>
+                <p>Esse é um Site em<b style="color: #FB40F8;"> Desenvolvimento</b>,Melhorias e ajustes pendentes!</p>
+                <p>Responsivo:30%;<br>
+                  Animações:50%;</p>
+                <p></p>
+              </div>
+            </a></li>
+          
+        </ul>
+    
+        <ul id="menu-mobile">
+          <li><a class="scroll" href="#home">HOME</a> </li>
+          <li><a class="scroll" href="#sobre">SOBRE</a></li>
+          <li><a class="scroll" href="#portifolio">PORTIFOLIO</a></li>
+          <li><a class="scroll" href="#Contato">CONTATO</a></li>
+    
+         
+        
+        </ul>
+    
+        <div id="menu-btn">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="4" />
+            <path d="M0,15 30,15" stroke="#fff" stroke-width="4" />
+            <path d="M0,25 30,25" stroke="#fff" stroke-width="4" />
+          </svg>
+        </div>
+        
+      
+      </nav>
+    
+    
+    
+    </header>
+
+
+    <div  id="voltarTopo">
+      <a class="slide-top" onclick="topFunction()" href="#" id="subir"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <g transform="matrix(0, -0.966215, 0.963873, 0, 2.389777, 498.054148)" style="">
+          <g xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path d="M256,0C114.833,0,0,114.844,0,256s114.833,256,256,256s256-114.844,256-256S397.167,0,256,0z M357.771,264.969    l-149.333,96c-1.75,1.135-3.771,1.698-5.771,1.698c-1.75,0-3.521-0.438-5.104-1.302C194.125,359.49,192,355.906,192,352V160    c0-3.906,2.125-7.49,5.563-9.365c3.375-1.854,7.604-1.74,10.875,0.396l149.333,96c3.042,1.958,4.896,5.344,4.896,8.969    S360.813,263.01,357.771,264.969z" data-original="#000000" style="fill: rgb(47, 234, 187);" class=""/>
+            </g>
+          </g>
+          <g xmlns="http://www.w3.org/2000/svg"/>
+          <g xmlns="http://www.w3.org/2000/svg"/>
+          <g xmlns="http://www.w3.org/2000/svg"/>
+          <g xmlns="http://www.w3.org/2000/svg"/>
+          <g xmlns="http://www.w3.org/2000/svg"/>
+          <g xmlns="http://www.w3.org/2000/svg"/>
+          <g xmlns="http://www.w3.org/2000/svg"/>
+          <g xmlns="http://www.w3.org/2000/svg"/>
+          <g xmlns="http://www.w3.org/2000/svg"/>
+          <g xmlns="http://www.w3.org/2000/svg"/>
+          <g xmlns="http://www.w3.org/2000/svg"/>
+          <g xmlns="http://www.w3.org/2000/svg"/>
+          <g xmlns="http://www.w3.org/2000/svg"/>
+          <g xmlns="http://www.w3.org/2000/svg"/>
+          <g xmlns="http://www.w3.org/2000/svg"/>
+        </g>
+      </svg></a>
+    </div>
+
+
+
+
+   
+
+
+    <div id="home" class="banner-inicial">
+      <div class="tooltip-mobile  ">
+        <span class="iconz blink-1">!</span>
+        <h1>Olá!</h1>
+        <p>Esse é um Site em<b style="color: #FB40F8;"> Desenvolvimento</b>,Melhorias e ajustes pendentes!</p>
+        <!-- <p>Responsivo:30%;<br>
+          Animações:50%;</p> -->
+     
+      </div>
+
+      <div class="painel-foto animacao-foto-inicial">
+        <img src="svg/painel-foto.svg" alt="">
+      </div>
+
+
+      <div class="direitaFoto animacao-card-foto">
+        <img src="img/me.webp" alt="">
+      </div>
+     
+      
+      
+      <div class="card  animacao-card-inicial">
+      
+      
+      
+      
+      
+        <p class="line linha-icone">Olá, eu sou <b class="nome"> Henrique Rossi </b> </p>
+        <div class="apresentacao">
+          <div class="frases-array">
+      
+            <p class="sub_line anime-frase">Desenvolvedor </p>
+            <p class="sub_line anime-frase2"> | FullStack</p>
+            <p class="sub_line anime-frase3"> | Game Design</p>
+          </div>
+      
+     
+          <div class="wrapper-banner anime-button-inicial">
+            <button onclick="window.open('./Currículo Henrique Rossi.pdf')">
+              Baixar Curriculo
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+      
+        </div>
+
+        <div class="card-mobile">
+          <img src="svg/banner-new.svg" alt="">
+        </div>
+      </div>
+
+
+      <div id="icones-lateral" class="icones-lateral  ">
+        <a href="https://www.linkedin.com/in/henrique-rossi-4171b11a2/" target="_blank">
+          <i class="fa fa-linkedin animacao-icone-inicial"
+            style="  margin-top: 3.2vw;box-shadow: 0px 1px 2px rgba(0,0,0,.8); padding: 5px;border-radius: 10%; ">
+          </i>
+        </a>
+        </br>
+        <a href="https://github.com/Henrique-Rossi" target="_blank">
+          <i class="fa fa-github animacao-icone-inicial-1 "
+            style="  box-shadow: 0px 1px 2px rgba(0,0,0,.8); padding: 5px;border-radius: 10%  ">
+          </i>
+        </a>
+        </br>
+        <a href="https://www.instagram.com/gamedevhrv/" target="_blank"> <i class="fa fa-instagram animacao-icone-inicial-2"
+            style="box-shadow: 0px 1px 2px rgba(0,0,0,.8); padding: 5px;border-radius: 10%">
+          </i>
+        </a>
+      
+      </div>
+      
+   </div>
+
+
+       
+
+
+
+
+      <div class="painel-sobre " id="sobre">
+        <div class="design-clip">
+      
+      
+          <p class="titulo_exp anime"><span class="span_restag">#01</span> <br>
+            <span class="span_exp"> Experiências</span>
+          </p>
+      
+      
+      
+      
+          <div class="cards-painel ">
+      
+      
+            <!---------- PRIMEIRO---------- -->
+            <div class=" card-1 card-main  anime">
+              <p class="anime-escreva">Mobile</p>
+      
+              <!-- <img src="svg/exp-parte-1.svg" alt="">  -->
+              <div id="anime-icones" class="icones-exp ">
+                <figure>
+                  <div class="flip-box icone-opac  ">
+                    <div class="flip-box-inner ">
+                      <div class="flip-box-front  ">
+                        <img src="svg/icons/flutter.svg" style="width:10vw; ">
+                      </div>
+                      <div class="flip-box-back">
+      
+                        <h3 class="title">Flutter</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:10vw;">  -->
+                      </div>
+                    </div>
+                  </div>
+      
+      
+      
+      
+                  <div class="flip-box  icone-opac">
+                    <div class="flip-box-inner ">
+                      <div class="flip-box-front ">
+                        <img src="svg/icons/firebase.svg" style="width:10vw;">
+                      </div>
+                      <div class="flip-box-back">
+                        <h3 class="title">FireBase</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:300px;height:200px">  -->
+                      </div>
+                    </div>
+                  </div>
+      
+      
+      
+      
+                  <div class="flip-box icone-opac ">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="svg/icons/sqllite.svg" style="width:10vw;">
+                      </div>
+                      <div class="flip-box-back">
+                        <h3 class="title">SqLite</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:300px;height:200px">  -->
+                      </div>
+                    </div>
+                  </div>
+      
+      
+      
+                  <div class="flip-box icone-opac">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="svg/icons/json.svg" style="width:10vw;">
+                      </div>
+                      <div class="flip-box-back">
+                        <h3 class="title">Json</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:300px;height:200px">  -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+            </div>
+      
+      
+      
+            <!---------- SEGUNDO---------- -->
+            <div class="card-2 card-main anime-painel-cima">
+              <p>WEB</p>
+      
+              <!-- <img src="svg/exp-parte-2.svg" alt=""> -->
+              <div id="anime-icones" class="icones-exp-2">
+      
+      
+                <figure>
+                  <div class="flip-box icone-opac  ">
+                    <div class="flip-box-inner ">
+                      <div class="flip-box-front  ">
+                        <img src="svg/icons/html.svg" style="width:10vw; ">
+                      </div>
+                      <div class="flip-box-back">
+      
+                        <h3 class="title">HTML</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:10vw;">  -->
+                      </div>
+                    </div>
+                  </div>
+      
+      
+      
+      
+                  <div class="flip-box icone-opac  ">
+                    <div class="flip-box-inner ">
+                      <div class="flip-box-front ">
+                        <img src="svg/icons/css.svg" style="width:10vw;">
+                      </div>
+                      <div class="flip-box-back">
+                        <h3 class="title">Css</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:300px;height:200px">  -->
+                      </div>
+                    </div>
+                  </div>
+      
+      
+      
+      
+                  <div class="flip-box icone-opac ">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="svg/icons/sass.svg" style="width:10vw;">
+                      </div>
+                      <div class="flip-box-back">
+                        <h3 class="title">Sass</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:300px;height:200px">  -->
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="flip-box icone-opac">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="svg/icons/js.svg" style="width:10vw;">
+                      </div>
+                      <div class="flip-box-back">
+                        <h3 class="title" style="font-size: 1.5vw;">JavaScript</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:300px;height:200px">  -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+                <div class="figure-2">
+                  <img class="anime-icones-sobe" src="svg/icons/jquery.svg" alt="">
+      
+                  <img class="anime-icones-sobe" src="svg/icons/boot.svg" alt="">
+                  <img class="anime-icones-sobe" src="svg/icons/php.svg" alt="">
+                </div>
+              </div>
+            </div>
+      
+      
+      
+      
+            <!---------- TERCEIRO---------- -->
+            <div class="card-3 card-main  anime">
+              <p>GAME DESIGN</p>
+      
+              <div id="anime-icones" class="icones-exp-3">
+      
+                <figure>
+                  <div class="flip-box icone-opac  ">
+                    <div class="flip-box-inner ">
+                      <div class="flip-box-front  ">
+                        <img src="svg/icons/unity.svg" style="width:10vw; ">
+                      </div>
+                      <div class="flip-box-back">
+      
+                        <h3 class="title">Unity3D</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:10vw;">  -->
+                      </div>
+                    </div>
+                  </div>
+      
+      
+      
+      
+                  <div class="flip-box icone-opac ">
+                    <div class="flip-box-inner ">
+                      <div class="flip-box-front ">
+                        <img src="svg/icons/blender.svg" style="width:10vw;">
+                      </div>
+                      <div class="flip-box-back">
+                        <h3 class="title">Blender</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:300px;height:200px">  -->
+                      </div>
+                    </div>
+                  </div>
+      
+      
+      
+      
+                  <div class="flip-box icone-opac ">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="svg/icons/mysql.svg" style="width:10vw;">
+                      </div>
+                      <div class="flip-box-back">
+                        <h3 class="title">Mysql</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:300px;height:200px">  -->
+                      </div>
+                    </div>
+                  </div>
+      
+      
+      
+                  <div class="flip-box icone-opac">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="svg/icons/ae.svg" style="width:10vw;">
+                      </div>
+                      <div class="flip-box-back">
+                        <h3 class="title" style="font-size: 1.4vw;"> After Effects</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:300px;height:200px">  -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+            </div>
+      
+      
+      
+      
+            <!----------QUARTO---------- -->
+            <div class="card-4 card-main  anime-painel-cima">
+              <p>OUTROS</p>
+      
+              <div id="anime-icones" class="icones-exp-4">
+      
+      
+      
+                <figure>
+                  <div class="flip-box icone-opac  ">
+                    <div class="flip-box-inner ">
+                      <div class="flip-box-front  ">
+                        <img src="svg/icons/AI.svg" style="width:10vw; ">
+                      </div>
+                      <div class="flip-box-back">
+      
+                        <h3 class="title" style="font-size: 1.6vw;">Illustrator</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:10vw;">  -->
+                      </div>
+                    </div>
+                  </div>
+      
+      
+      
+      
+                  <div class="flip-box icone-opac  ">
+                    <div class="flip-box-inner ">
+                      <div class="flip-box-front ">
+                        <img src=" svg/icons/NET.svg" style="width:10vw;">
+                      </div>
+                      <div class="flip-box-back">
+                        <h3 class="title">.Net</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:300px;height:200px">  -->
+                      </div>
+                    </div>
+                  </div>
+      
+      
+      
+      
+                  <div class="flip-box icone-opac ">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="svg/icons/SERVER.svg" style="width:10vw;">
+                      </div>
+                      <div class="flip-box-back">
+                        <h3 class="title" style="font-size: 1.6vw;">Sql Server</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:300px;height:200px">  -->
+                      </div>
+                    </div>
+                  </div>
+      
+      
+      
+                  <div class="flip-box icone-opac">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="svg/icons/WP.svg" style="width:10vw;">
+                      </div>
+                      <div class="flip-box-back">
+                        <h3 class="title" style="font-size: 1.5vw;">WordPress</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:300px;height:200px">  -->
+                      </div>
+                    </div>
+                  </div>
+      
+      
+                  <div class="flip-box icone-opac">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="svg/icons/PS.svg" style="width:10vw;">
+                      </div>
+                      <div class="flip-box-back">
+                        <h3 class="title" style="font-size: 1.5vw;">PhotoShop</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:300px;height:200px">  -->
+                      </div>
+                    </div>
+                  </div>
+      
+      
+                  <div class="flip-box icone-opac">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="svg/icons/SQL.svg" style="width:10vw;">
+                      </div>
+                      <div class="flip-box-back">
+                        <h3 class="title">Sql</h3>
+                        <!-- <img src="svg/icons/unity.svg" alt="Paris" style="width:300px;height:200px">  -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <section  id="portifolio"  >
+        <div class="Portifolio ">
+        
+          <p class="titulo-portifolio anime" ><span class="span_portifolio">#02</span> <br>
+            <span class="span_portifolio-2">Last Works</span>
+          </p>
+        
+        <div  class="works">
+         
+          <div   class="boxs">
+             
+            <!---------- PRIMEIRO---------- -->
+                <div class="div1 box-main anime ">
+                
+                  
+                    <!-- <div class="icone-work">
+                    
+                      <svg id="Camada_11" data-name="Camada 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.26 136.51">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              stroke: #2feabb;
+                              stroke-miterlimit: 10;
+                            }
+                          </style>
+                        </defs>
+                        <title>unity</title>
+                        <path class="cls-1"
+                          d="M419.89,2151.34l-22.41-40.59,22.41-40.58,10.92,40.56Zm-49.5-4-28.13-29.87h44.8l22.41,40.58Zm0-73.84,39.08-10.71-22.41,40.59H341.74c0,.59,28.65-29.85,28.65-29.85Zm57.31-30.43-51.06,14.09-7.83,14.12H353.72l-37.51,39.45,37.51,39.46h15.09l7.29,14.09,51.08,14.06,13.55-53.54-7.29-14.1,7.81-14.09Z"
+                          transform="translate(-315.52 -2042.45)" />
+                      </svg>
+                    </div>
+                 -->
+                
+                    <h1>Clone Zelda-3D</h1>
+                    <div class="previa">
+                
+                      <img id="imgDino" src="img/jogo.webp" />
+                
+                    </div>
+                    <!-- <div class="icon-player">
+                
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 142.448 142.448" style="enable-background:new 0 0 142.448 142.448;"
+                        xml:space="preserve">
+                        <g>
+                          <path
+                            d="M142.411,68.9C141.216,31.48,110.968,1.233,73.549,0.038c-20.361-0.646-39.41,7.104-53.488,21.639
+                                                                        C6.527,35.65-0.584,54.071,0.038,73.549c1.194,37.419,31.442,67.667,68.861,68.861c0.779,0.025,1.551,0.037,2.325,0.037
+                                                                        c19.454,0,37.624-7.698,51.163-21.676C135.921,106.799,143.033,88.377,142.411,68.9z M111.613,110.336
+                                                                        c-10.688,11.035-25.032,17.112-40.389,17.112c-0.614,0-1.228-0.01-1.847-0.029c-29.532-0.943-53.404-24.815-54.348-54.348
+                                                                        c-0.491-15.382,5.122-29.928,15.806-40.958c10.688-11.035,25.032-17.112,40.389-17.112c0.614,0,1.228,0.01,1.847,0.029
+                                                                        c29.532,0.943,53.404,24.815,54.348,54.348C127.91,84.76,122.296,99.306,111.613,110.336z" />
+                          <path
+                            d="M94.585,67.086L63.001,44.44c-3.369-2.416-8.059-0.008-8.059,4.138v45.293
+                                                                        c0,4.146,4.69,6.554,8.059,4.138l31.583-22.647C97.418,73.331,97.418,69.118,94.585,67.086z" />
+                
+                      </svg>
+                
+                    </div> -->
+                    <p> Envolveu toda uma tematica ambiental como a jogabilidade
+                      inspirado na famosa franquia de videos games, The legend of Zelda...
+                    </p>
+                 
+                
+                
+                    <div class="janela_texto">
+                      <h2>+ Informações</h2>
+                      
+                      <ul>
+                        <li>Desenvolvido em Unity3D</li>
+                        <li>Desenvolvido em Curso</li>
+                        <li>Linguagem:C#</li>
+                      </ul>
+                      <div class="janela-icon">
+                        <a href="https://github.com/Henrique-Rossi/CloneZelda3D" target="_blank"><i class="fa fa-github" style="font-size:52px;">                          </i></a>
+                   
+                      </div>
+                      <div class="icone-janela-model">
+                    
+                        <svg id="Camada_11" data-name="Camada" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.26 136.51">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill:  none;
+                                stroke: #2feabb;
+                             
+                              }
+                            </style>
+                          </defs>
+                          
+                          <path class="cls-1"
+                            d="M419.89,2151.34l-22.41-40.59,22.41-40.58,10.92,40.56Zm-49.5-4-28.13-29.87h44.8l22.41,40.58Zm0-73.84,39.08-10.71-22.41,40.59H341.74c0,.59,28.65-29.85,28.65-29.85Zm57.31-30.43-51.06,14.09-7.83,14.12H353.72l-37.51,39.45,37.51,39.46h15.09l7.29,14.09,51.08,14.06,13.55-53.54-7.29-14.1,7.81-14.09Z"
+                            transform="translate(-315.52 -2042.45)" />
+                        </svg>
+                    </div>
+                    </div>
+                 
+                </div>
+
+
+
+
+
+              
+ 
+            <!---------- SEGUNDO---------- -->
+              <div class="div2 box-main anime">
+                <!-- <div class="icone-work">
+                  <img src="svg/net.svg"   alt="">
+                </div> -->
+                <h1>Sistema de Gestão de biblioteca</h1>
+                
+                <div class="previa">
+              
+                   <img id="imgDino" src="img/biblioteca.webp" alt=""> 
+                </div>
+                
+                <!-- <div class="icon-player">
+            
+                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 142.448 142.448" style="enable-background:new 0 0 142.448 142.448;"
+                    xml:space="preserve">
+                    <g>
+                      <path
+                        d="M142.411,68.9C141.216,31.48,110.968,1.233,73.549,0.038c-20.361-0.646-39.41,7.104-53.488,21.639
+                                                                    C6.527,35.65-0.584,54.071,0.038,73.549c1.194,37.419,31.442,67.667,68.861,68.861c0.779,0.025,1.551,0.037,2.325,0.037
+                                                                    c19.454,0,37.624-7.698,51.163-21.676C135.921,106.799,143.033,88.377,142.411,68.9z M111.613,110.336
+                                                                    c-10.688,11.035-25.032,17.112-40.389,17.112c-0.614,0-1.228-0.01-1.847-0.029c-29.532-0.943-53.404-24.815-54.348-54.348
+                                                                    c-0.491-15.382,5.122-29.928,15.806-40.958c10.688-11.035,25.032-17.112,40.389-17.112c0.614,0,1.228,0.01,1.847,0.029
+                                                                    c29.532,0.943,53.404,24.815,54.348,54.348C127.91,84.76,122.296,99.306,111.613,110.336z" />
+                      <path
+                        d="M94.585,67.086L63.001,44.44c-3.369-2.416-8.059-0.008-8.059,4.138v45.293
+                                                                    c0,4.146,4.69,6.554,8.059,4.138l31.583-22.647C97.418,73.331,97.418,69.118,94.585,67.086z" />
+            
+                  </svg>
+            
+                </div> -->
+                <p> Sistema de Gestão de biblioteca,feito com finalidade de automatizar as tarefas repetitivas e digitalizar os trabalho manuais
+                </p>
+            
+            
+            
+                <div class="janela_texto">
+                  <h2>+ Informações</h2>
+                 
+                  <ul>
+                    <li>Desenvolvido em .Net </li>
+                    <li>Desenvolvido na Faculdade</li>
+                    <li>Linguagem:C# e SqlServer </li>
+                  
+                  </ul>
+                  <div class="janela-icon">
+                    <a href="https://github.com/Henrique-Rossi/BibliotecaApp" target="_blank"><i class="fa fa-github" style="font-size:52px;">
+                      </i></a>
+                  </div>
+                  <div class="icone-janela-model" >
+                <svg id="Camada_11" data-name="Camada 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.68 130.1">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: none;
+                        stroke: #2feabb;
+                        stroke-miterlimit: 10;
+                      }
+                    </style>
+                  </defs>
+                  <title>net</title>
+                  <ellipse class="cls-1" cx="76.84" cy="65.05" rx="76.34" ry="64.55" />
+                  <ellipse class="cls-1" cx="17.92" cy="72.62" rx="4.04" ry="3.17" />
+                  <path class="cls-1"
+                    d="M704.42,1771h-6.28l-22.52-29.62a12.6,12.6,0,0,1-1.4-2.34H674a30.07,30.07,0,0,1,.25,5.11V1771h-5.15v-37.16h6.64L697.68,1763a23,23,0,0,1,1.72,2.49h.12a33.33,33.33,0,0,1-.3-5.47v-26.17h5.15Z"
+                    transform="translate(-639.39 -1695.83)" />
+                  <path class="cls-1" d="M739.09,1771H715.91v-37.16h22.21v3.93H721.06v12.36h15.79V1754h-15.8v13h18.08Z"
+                    transform="translate(-639.39 -1695.83)" />
+                  <path class="cls-1" d="M773.49,1737.72h-12.6V1771h-5.15v-33.23h-12.6v-3.93h30.35Z"
+                    transform="translate(-639.39 -1695.83)" />
+                  <path class="cls-1"
+                    d="M702.51,1796.06a13,13,0,0,1-5.51,1,9.55,9.55,0,0,1-6.82-2.42,8.3,8.3,0,0,1-2.58-6.33,8.71,8.71,0,0,1,2.88-6.81,10.56,10.56,0,0,1,7.31-2.57,12.91,12.91,0,0,1,4.69.7v2.19a10.55,10.55,0,0,0-4.72-1.06,7.79,7.79,0,0,0-5.57,2,7.06,7.06,0,0,0-2.15,5.4,6.73,6.73,0,0,0,2,5.11,7.27,7.27,0,0,0,5.23,1.89,10.54,10.54,0,0,0,5.2-1.15Z"
+                    transform="translate(-639.39 -1695.83)" />
+                  <path class="cls-1"
+                    d="M712.24,1797.09a7.08,7.08,0,0,1-5-1.72,6.11,6.11,0,0,1-1.89-4.66,6.25,6.25,0,0,1,2-4.92,7.68,7.68,0,0,1,5.3-1.78,6.86,6.86,0,0,1,5,1.72,7.12,7.12,0,0,1-.14,9.59A7.28,7.28,0,0,1,712.24,1797.09Zm.16-11.44A4.64,4.64,0,0,0,709,1787a5,5,0,0,0-1.27,3.64,4.43,4.43,0,0,0,4.73,4.8,4.39,4.39,0,0,0,3.43-1.26,5,5,0,0,0,1.19-3.59,5.09,5.09,0,0,0-1.19-3.62,4.52,4.52,0,0,0-3.43-1.29Z"
+                    transform="translate(-639.39 -1695.83)" />
+                  <path class="cls-1"
+                    d="M730.38,1786.29a3.3,3.3,0,0,0-4.15.8,5.16,5.16,0,0,0-1,3.31v6.39H723v-12.51h2.28v2.57h.06a4.33,4.33,0,0,1,1.48-2.07,3.72,3.72,0,0,1,2.25-.73,4.14,4.14,0,0,1,1.35.17Z"
+                    transform="translate(-639.39 -1695.83)" />
+                  <path class="cls-1"
+                    d="M743.93,1791h-10a4.33,4.33,0,0,0,1.28,3.22,4.8,4.8,0,0,0,3.36,1.15A7.65,7.65,0,0,0,743,1794v1.9a9.28,9.28,0,0,1-5,1.2,6,6,0,0,1-6.47-5.41,5.15,5.15,0,0,1,0-1.11,6.37,6.37,0,0,1,6.13-6.6h.44a5.7,5.7,0,0,1,4.29,1.59,6.07,6.07,0,0,1,1.53,4.42Zm-2.33-1.72a3.72,3.72,0,0,0-1-2.71,3.44,3.44,0,0,0-2.57-1,4,4,0,0,0-2.74,1,4.49,4.49,0,0,0-1.41,2.66Z"
+                    transform="translate(-639.39 -1695.83)" />
+                </svg> </div>
+                </div>               
+              </div>
+              
+
+
+
+ 
+            <!---------- TERCEIRO---------- -->
+              <div  class="div3 box-main  anime-icones-sobe">
+                <!-- <div class="icone-work">
+                  <img src="svg/flutter.svg" alt="">
+                </div> -->
+              
+                <h1>Todo</h1>
+              
+               
+                <div class="previa">
+              
+                  <img id="imgDino" src="img/todoreacrt.png" alt="">
+                </div>
+                <!-- <div class="icon-player">
+            
+                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 142.448 142.448" style="enable-background:new 0 0 142.448 142.448;"
+                    xml:space="preserve">
+                    <g>
+                      <path
+                        d="M142.411,68.9C141.216,31.48,110.968,1.233,73.549,0.038c-20.361-0.646-39.41,7.104-53.488,21.639
+                                                                    C6.527,35.65-0.584,54.071,0.038,73.549c1.194,37.419,31.442,67.667,68.861,68.861c0.779,0.025,1.551,0.037,2.325,0.037
+                                                                    c19.454,0,37.624-7.698,51.163-21.676C135.921,106.799,143.033,88.377,142.411,68.9z M111.613,110.336
+                                                                    c-10.688,11.035-25.032,17.112-40.389,17.112c-0.614,0-1.228-0.01-1.847-0.029c-29.532-0.943-53.404-24.815-54.348-54.348
+                                                                    c-0.491-15.382,5.122-29.928,15.806-40.958c10.688-11.035,25.032-17.112,40.389-17.112c0.614,0,1.228,0.01,1.847,0.029
+                                                                    c29.532,0.943,53.404,24.815,54.348,54.348C127.91,84.76,122.296,99.306,111.613,110.336z" />
+                      <path
+                        d="M94.585,67.086L63.001,44.44c-3.369-2.416-8.059-0.008-8.059,4.138v45.293
+                                                                    c0,4.146,4.69,6.554,8.059,4.138l31.583-22.647C97.418,73.331,97.418,69.118,94.585,67.086z" />
+            
+                  </svg>
+            
+                </div> -->
+                
+                <p> Projetos de estudos uma Lista de tarefa editável e personalizavel,ainda em desenvolvimento.
+                </p>
+            
+            
+            
+                <div class="janela_texto">
+                  <h2>+ Informações</h2>
+                
+                  <ul>
+                    <li>Desenvolvido em React</li>
+                    <li>Curso</li>
+                    <li>Linguagem:Js</li>
+                  </ul>
+                  <div class="janela-icon">
+                    <a href="https://github.com/Henrique-Rossi/Todo-ReactJS" target="_blank"><i class="fa fa-github"
+                        style="font-size:52px;">
+                      </i></a>
+                
+                  </div>
+                  <div class="icone-janela-model">
+                
+                    <svg x="0" y="0" viewBox="0 0 445 445.6" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                      <g>
+                        <path xmlns="http://www.w3.org/2000/svg"
+                          d="m385.082031 102.800781c-16.601562-26-52.300781-36.800781-100.402343-30.601562-1.699219.199219-3.5.5-5.199219.699219-.699219-1.597657-1.398438-3.199219-2.199219-4.796876-20.699219-43.902343-49-68.101562-79.800781-68.101562s-59.199219 24.199219-79.800781 68.101562c-.699219 1.597657-1.5 3.199219-2.199219 4.796876-1.800781-.296876-3.5-.5-5.199219-.699219-48.199219-6.300781-83.800781 4.601562-100.402344 30.601562-16.597656 26-11.5 62.898438 14.300782 103.898438 3.402343 5.402343 7.101562 10.800781 11.101562 16.101562-4 5.398438-7.699219 10.699219-11.101562 16.097657-25.800782 41-30.898438 78-14.300782 103.902343 13.5 21.199219 39.703125 32.300781 75 32.300781 8.460938-.046874 16.910156-.613281 25.300782-1.703124 1.699218-.199219 3.5-.5 5.199218-.699219.703125 1.601562 1.402344 3.199219 2.203125 4.800781 20.699219 43.898438 49 68.101562 79.796875 68.101562 30.800782 0 59.203125-24.203124 79.800782-68.101562.699218-1.601562 1.5-3.199219 2.199218-4.800781 1.800782.300781 3.5.5 5.203125.699219 8.382813 1.136718 16.835938 1.703124 25.296875 1.703124 35.300782 0 61.5-11.101562 75-32.300781 16.601563-26 11.5-62.902343-14.296875-103.902343-3.402343-5.398438-7.101562-10.796876-11.101562-16.097657 4-5.402343 7.699219-10.699219 11.101562-16.101562 26.097657-41.097657 31.199219-78 14.5-103.898438zm-249.300781-26.199219c16.898438-36 39.398438-56.601562 61.699219-56.601562s44.800781 20.601562 61.699219 56.601562c.011718.074219.046874.144532.101562.199219-21.242188 5.109375-41.960938 12.171875-61.902344 21.097657-19.917968-8.96875-40.644531-16.035157-61.898437-21.097657.199219 0 .199219-.101562.300781-.199219zm151.800781 146.199219c.003907 16-.863281 31.992188-2.601562 47.898438-12.464844 10.058593-25.484375 19.40625-39 28-15.597657 10.015625-31.832031 19.003906-48.601563 26.902343-16.734375-7.960937-32.96875-16.945312-48.597656-26.902343-13.5-8.617188-26.519531-17.964844-39-28-3.46875-31.839844-3.46875-63.960938 0-95.800781 26.953125-21.660157 56.355469-40.085938 87.597656-54.898438 16.738282 7.957031 32.96875 16.941406 48.601563 26.898438 13.5 8.617187 26.519531 17.964843 39 28 1.738281 15.910156 2.605469 31.898437 2.601562 47.902343zm19.097657-29.101562c9.792968 9.121093 19.011718 18.839843 27.601562 29.101562-8.589844 10.257813-17.808594 19.976563-27.601562 29.097657.601562-9.597657.902343-19.296876.902343-29.097657s-.300781-19.5-.902343-29.101562zm-25.800782 105.402343c-3.15625 17.3125-7.738281 34.335938-13.699218 50.898438-15.53125-3.507812-30.773438-8.1875-45.597657-14 11.796875-6.199219 23.597657-13 35.296875-20.398438 8.203125-5.300781 16.203125-10.800781 24-16.5zm-107.5 36.898438c-14.796875 5.886719-30.046875 10.570312-45.597656 14-5.960938-16.5625-10.542969-33.585938-13.699219-50.898438 7.699219 5.699219 15.699219 11.199219 24 16.398438 11.699219 7.5 23.5 14.300781 35.296875 20.5zm-85.097656-84.101562c-9.792969-9.121094-19.007812-18.839844-27.601562-29.097657 8.59375-10.261719 17.808593-19.980469 27.601562-29.101562-.601562 9.601562-.902344 19.300781-.902344 29.101562s.300782 19.5.902344 29.097657zm25.800781-105.398438c3.15625-17.316406 7.738281-34.339844 13.699219-50.898438 15.53125 3.503907 30.777344 8.183594 45.597656 14-11.796875 6.199219-23.597656 13-35.296875 20.398438-8.203125 5.300781-16.203125 10.800781-24 16.5zm142.699219-16.5c-11.601562-7.398438-23.402344-14.300781-35.300781-20.398438 14.796875-5.886718 30.046875-10.570312 45.601562-14 5.957031 16.558594 10.539063 33.582032 13.699219 50.898438-7.699219-5.699219-15.699219-11.199219-24-16.5zm-215.699219 66c-21.203125-33.601562-26.402343-63.699219-14.402343-82.5 9.601562-15 30.402343-23.101562 58.5-23.101562 7.523437.03125 15.039062.535156 22.5 1.5h.199218c-8.089844 23.523437-13.71875 47.820312-16.796875 72.5-15.410156 12.855468-29.757812 26.9375-42.902343 42.101562-2.5-3.398438-4.898438-6.898438-7.097657-10.5zm66.5 157.601562c-7.460937.96875-14.976562 1.46875-22.5 1.5-28.101562 0-48.902343-8-58.5-23.101562-12-18.800781-6.800781-48.898438 14.398438-82.5 2.199219-3.5 4.601562-7.101562 7.101562-10.601562 13.140625 15.167968 27.488281 29.246093 42.898438 42.101562 3.082031 24.683594 8.710937 48.980469 16.800781 72.5 0 .101562-.101562.101562-.199219.101562zm151.597657 15.398438c-16.898438 36-39.398438 56.601562-61.699219 56.601562s-44.800781-20.601562-61.699219-56.601562c-.011719-.074219-.046875-.144531-.101562-.199219 21.242187-5.109375 41.960937-12.171875 61.902343-21.101562 19.917969 8.972656 40.644531 16.039062 61.898438 21.101562-.199219 0-.199219.097657-.300781.199219zm94.699218-119.398438c21.203125 33.597657 26.402344 63.699219 14.402344 82.5-12 18.796876-41.5 26.699219-80.902344 21.5h-.199218c8.089843-23.523437 13.722656-47.820312 16.800781-72.5 15.410156-12.855468 29.757812-26.9375 42.898437-42.101562 2.402344 3.5 4.800782 7 7 10.601562zm-50-85.101562c-3.078125-24.683594-8.707031-48.980469-16.796875-72.5h.199219c39.398438-5.101562 68.898438 2.699219 80.898438 21.5s6.800781 48.898438-14.398438 82.5c-2.199219 3.5-4.601562 7.101562-7.101562 10.601562-13.082032-15.191406-27.398438-29.273437-42.800782-42.101562zm0 0"
+                          fill="#2feabb" data-original="#000000" style="" class="" />
+                        <path xmlns="http://www.w3.org/2000/svg"
+                          d="m197.480469 183.199219c-21.871094 0-39.601563 17.730469-39.601563 39.601562 0 21.871094 17.730469 39.597657 39.601563 39.597657 21.871093 0 39.601562-17.726563 39.601562-39.597657-.015625-21.867187-17.738281-39.585937-39.601562-39.601562zm0 59.199219c-10.824219 0-19.601563-8.773438-19.601563-19.597657s8.777344-19.601562 19.601563-19.601562 19.601562 8.777343 19.601562 19.601562c-.019531 10.816407-8.785156 19.582031-19.601562 19.597657zm0 0"
+                          fill="#2feabb" data-original="#000000" style="" class="" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                </div>
+
+
+
+ 
+            <!---------- QUARTO---------- -->
+
+              <div class="div4 box-main anime-icones-sobe">
+                <!-- <div class="icone-work" >
+                  <svg id="Camada_11" data-name="Camada 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.62 132.84"><defs><style>.cls-1{opacity:0.8;}.cls-2{fill:#2feabb;}</style></defs><title>unity-borda</title><g class="cls-1"><path class="cls-2" d="M480.56,884l.11,3.07v0l3.35,6.43c1.1,2.15,2.25,4.28,3.32,6.45l-.32-.27,47.74,14.22-.52.81-17.56-20,.24.15-18-5.17c-1.49-.41-3-.89-4.52-1.38l-4.57-1.44Zm0,0,9,2.32,4.55,1.15c1.52.38,3.05.76,4.6,1.22l18.47,5.2.14,0,.1.11L535,914l1.15,1.31-1.66-.5-47.75-14.2-.22-.06-.09-.21c-1-2.18-2-4.4-3-6.61l-3-6.62v-.05Z" transform="translate(-429.59 -782.53)"/><path class="cls-2" d="M538.21,849l-9.93,38.9L528,889l-.54-1c-1.81-3.21-3.6-6.42-5.35-9.66l-5.29-9.71-10.59-19.39.72.18-9.46,6.14.17-.64,19.82,39.17-.07-.1L535,914l-.86.21,13.07-51.85,0,.36L540,849.26l-.12-.23.12-.24,7.21-13.44,0,.36-13.51-51.08h1l-3.15,12.1q-1.54,6-3.2,12.08v-.22Zm0,0-10.79-40.22,0-.11,0-.12q1.49-6.06,3.1-12.11l3.16-12.1.48-1.84.48,1.84,13.51,51.09.06.19-.1.17-7.2,13.44v-.47l7.2,13.44.09.18,0,.18-13.07,51.86-.23.92-.63-.72-17.56-20,0,0,0,0L496.78,855.4l-.2-.4.37-.25,9.46-6.14.45-.3.26.48,10.59,19.39,5.3,9.7q2.65,4.83,5.23,9.73l-.81.1Z" transform="translate(-429.59 -782.53)"/><path class="cls-2" d="M481.46,813.31l12.5-3.94c2.07-.66,4.13-1.33,6.17-1.88l6.15-1.79,24.59-7.08-.35.37,3.15-14.59.62.58-46.84,13.07.32-.26c-.56,1.12-1.18,2.21-1.77,3.32l-1.78,3.31L480.64,811V811Zm0,0-1-2.28V811l3.18-6.82,1.59-3.41c.54-1.13,1.05-2.28,1.61-3.4l.1-.2.22-.06L534,784l.8-.22-.17.81-3.16,14.59-.06.29-.29.09-24.95,7.12L500,808.47c-2.09.63-4.16,1.14-6.21,1.67Z" transform="translate(-429.59 -782.53)"/><path class="cls-2" d="M496.32,842.5l4.94-9.86c.85-1.65,1.63-3.32,2.52-5l2.67-5,10.67-19.95.1-.19.2-.06,12.75-3.65.84-.24-.22.84-2.45,9.4,0,.06,0,0L517.71,829.1l-5.29,10.08c-1.78,3.35-3.47,6.75-5.39,10l-.22.38-.34-.23Zm0,0,10.57,6.19-.56.15c1.62-3.44,3.46-6.76,5.2-10.13l5.3-10.08,10.58-20.16,0,.1,2.45-9.4.62.61-12.74,3.65.3-.24-10.56,19.59-2.64,4.9c-.88,1.63-1.87,3.26-2.8,4.9Z" transform="translate(-429.59 -782.53)"/><path class="cls-2" d="M481.46,813.31l-6.35,7.39c-2.14,2.47-4.21,5-6.49,7.43l-13.36,14.7-.1.11-.14,0c-6.15,1.74-12.3,3.47-18.48,5.13-1.55.41-3.09.82-4.66,1.2l-.59.13-.31.06a1.91,1.91,0,0,1-.46,0s.05,0-.19-.07a.53.53,0,0,1-.26-.45l0-.1a1,1,0,0,1,.09-.21,1.16,1.16,0,0,1,.16-.21l.2-.24.4-.45,1.62-1.78,6.52-7,26.25-28,.14-.15h.21c1.24,0,2.48,0,3.72,0h3.72l7.44,0h.06l0,.05Zm0,0-1-2.28.08.06-7.42.41-3.72.2c-1.24.06-2.47.15-3.71.19l.35-.16-26.25,27.95-6.51,7-1.61,1.77-.39.45-.19.22s-.07.09,0,0a.11.11,0,0,0,0-.08s0,0,0,0,0-.35-.24-.43-.12,0-.16-.05l1-.22c1.54-.36,3.08-.78,4.62-1.19,6.17-1.65,12.32-3.38,18.47-5.12l-.23.14,13.21-14.48c2.15-2.43,4.51-4.77,6.79-7.17Z" transform="translate(-429.59 -782.53)"/><path class="cls-2" d="M497.23,855.17l-15,.38c-5,.19-10.06.09-15.1.12H436.67l-.15-.14-6.31-6.14-.62-.62.84-.23L454.76,842l.06,0h41.65l.12.08c1.74,1.06,3.45,2.17,5.15,3.31l5.09,3.4.38.25-.37.23Zm0,0,9.3-6.38v.48l-5.26-3.14q-2.64-1.54-5.21-3.21l.26.08H454.89l.13,0-24.33,6.53.22-.84,6.31,6.14-.35-.14H467c5,0,10-.07,15.07.12Z" transform="translate(-429.59 -782.53)"/><path class="cls-2" d="M480.56,884l-6.77-7.05-3.36-3.51c-1.09-1.18-2.13-2.4-3.21-3.58l-12.87-14.33.38.16H436.87l.37-.83L465.62,886l-.35-.16c1.28.07,2.55.1,3.83.19l3.82.32,7.65.63-.13.12Zm0,0,.12,3.07v.12h-.13l-7.67-.13-3.83-.07c-1.28,0-2.55-.13-3.83-.19H465l-.14-.15L436.5,855.51l-.76-.84H455l.15.17,13,14.48c1.07,1.21,2.18,2.4,3.24,3.62l3.1,3.69Z" transform="translate(-429.59 -782.53)"/></g></svg>
+                </div> -->
+              
+                <h1> Projeto em Andamento</h1>
+              
+               <div class="previa">
+                  <img src="img/alogo.webp" width="1vw" alt="">
+                </div> <!-- 
+                <hr>
+                <p class="legenda">
+                  Game pessoal que estou desenvolvendo com finaldiade de aprendizado e entendimento da engine unity
+                </p>
+              
+              
+              
+                <button class="button-painel-works">Ver Mais</button> -->
+              </div>
+            </div>
+          </div>    
+        </div>
+       </section>
+
+
+
+
+      
+       <footer id="Contato">
+      
+        <div class="parent">
+      
+          <div class="cima">
+            <div class="block-r ">
+              <span class="titulo-footer-cima ">Obrigado por verificar meu site!<br>  </span>
+            </div>
+            <br>
+            <br>
+            <div class="sub-title-footer ">
+            <span class="comentario ">// É um trabalho em andamento, por isso volte sempre!</span>
+          </div>
+
+            <br>
+      
+          </div>
+      
+          <div class="meio anime-icones-sobe">
+      
+            <div class="dividir-footer" style="margin-left: 10vw;">
+              <section class="icons">
+                <div><a href="https://www.linkedin.com/in/henrique-rossi-4171b11a2/" target="_blank"><i class="fa fa-linkedin"
+                      style=""> </i> <span>Linkedin </span></a> </div>
+                <div><a href="https://github.com/Henrique-Rossi" target="_blank"><i class="fa fa-github"
+                      style=""> </i> <span>GitHub </span></a></div>
+                <div><a href="https://www.instagram.com/gamedevhrv/" target="_blank"> <i class="fa fa-instagram"
+                      style=""> </i> <span>Instagram </span></a> </div>
+      
+      
+              </section>
+      
+              <div class="separacao">
+                 <span id="frases"></span> 
+                <div class="wrapper">
+                  <button id="myBtn">
+                    Entrar em Contato
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+                <!-- <button id="myBtn" class="button-contato">Entrar em Contato</button> -->
+              </div>
+      
+            </div>
+            <!-- Trigger/Open The Modal -->
+      
+      
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+      
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+      
+                <div class="container">
+                  <form method="POST" action="./email.php">
+      
+                    <label for="fname">Endereço de email</label>
+                    <input type="text" id="fname" name="email" placeholder="Seu Email..">
+      
+                    <label for="lname">Como posso chamá-lo?</label>
+                    <input type="text" id="lname" name="nome" placeholder="Seu Nome..">
+      
+      
+                    <label for="subject">Sua pergunta</label>
+                    <textarea id="subject" name="mensagem" placeholder="Digite alguma coisa.." style="height:80px"></textarea>
+      
+                    <input type="submit" value="Enviar">
+      
+                  </form>
+                </div>
+      
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      
+         <div class="area">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div> 
+        </div>
+      </footer>
+    </div>
+      
+   
+ 
+
+
+
+
+
+<script>
+  
+
+ 
+
+
+
+  //mudar textos
+  $(document).ready(function(){
+    var textos = ["Iniciar um projeto?", " Algum Feedback?", " Oi, Obrigado =D  "];
+    var atual = 0;
+    $('#frases').text(textos[atual++]);
+    setInterval(function() {
+        $('#frases').fadeOut(function() {
+            if (atual >= textos.length) atual = 0;
+            $('#frases').text(textos[atual++]).fadeIn();
+        });
+    }, 2000);
+});
+
+
+
+
+
+
+
+
+
+//Ativa Previa gif
+
+// $(document).ready(function()
+// {
+//     $("#imgDino").hover(
+//         function()
+//         {
+//             $(this).attr("src", "./videos/20210210_212946 - Copy.gif");
+//         },
+//         function()
+//         {
+//             $(this).attr("src", "img/jogo.jpeg");
+//         }                         
+//     );                  
+// });
+
+
+
+/*maquina de escrever xcript*/
+// var app = document.getElementById('frases');
+
+// var typewriter = new Typewriter(app, {
+//     loop: true
+// });
+
+// typewriter.typeString('Oi, Obrigado =D')
+//     .pauseFor(300)
+//     .deleteAll()
+//     .typeString('Algum Feedback?')
+//     .pauseFor(300)
+//     .deleteAll()
+//     .typeString('Iniciar um projeto? ')
+//     .pauseFor(100)
+//     .start();
+
+/*efeito botão back to top*/
+
+/*sem efeito de sumir o botao*/
+// $(document).ready(function() {
+// 	$('#subir').click(function(){
+// 		$('html, body').animate({scrollTop:0}, 'slow');
+// 		return false;
+// 	});
+// });
+
+
+
+/*subir ao topo*/
+
+var mybutton = document.getElementById("subir");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.opacity = 1;
+    mybutton.style.zIndex=9;
+  } else {
+    mybutton.style.opacity=0;
+    mybutton.style.zIndex=0;
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  $('html, body').animate({scrollTop:0}, 'slow');
+}
+
+
+
+
+
+/*MODAL*/
+
+  // var modal = document.getElementById("myModal");
+  
+  
+  // var btn = document.getElementById("myBtn");
+  
+  
+  // var span = document.getElementsByClassName("close")[0];
+  
+
+  // btn.onclick = function() {
+  //   modal.style.display = "block";
+  // }
+  
+
+  // span.onclick = function() {
+  //   modal.style.display = "none";
+  // }
+  
+  
+  // window.onclick = function(event) {
+  //   if (event.target == modal) {
+  //     modal.style.display = "none";
+  //   }
+  // }
+  
+  </script>
+ 
+  <script type="text/javascript" src="js/app.js"></script>
+  <script src="script.js"></script>
+
+  
+
+
+
+  <!-- Fade in menssagem inicial -->
+  <script>
+   (function () {
+    var $target = $('.linha-icone'),
+      animationClass = 'animacao-linha',
+      offset = $(window).height() * 3 / 3.5;
+  
+    function animeScroll() {
+      var documentTop = $(document).scrollTop();
+  
+      $target.each(function () {
+        var itemTop = $(this).offset().top;
+        if (documentTop > itemTop - offset) {
+          $(this).addClass(animationClass);
+          /*$(this).animate({ 'opacity': '1' }, 1000);*/
+        } else {
+          /*$(this).removeClass(animationClass);*/
+        }
+      });
+    }
+  
+    animeScroll();
+  
+    $(document).scroll(debounce(function () {
+      animeScroll();
+    }, 200));
+  })();
+
+  
+  </script>
+  
+</body>
+
+</html>
